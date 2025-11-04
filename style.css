@@ -120,7 +120,7 @@ section {
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .home-img img {
     width: 32vw;
@@ -137,14 +137,29 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    height: 50px;
     font-size: 3rem;
-    padding: 1rem;
+    padding: 0.5rem;
     background: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 0.5;
     transition: 0.3s ease-in-out;
+}
+.social-icons img {
+    width: 100%;      /* Fill the container width */
+    height: 100%;     /* Fill the container height */
+    object-fit: contain;  /* Scale proportionally without cropping */
+    border-radius: 50%;   /* Optional: Ensures the image corners match the circular border if needed */
+    background: linear-gradient(
+        270deg,
+        #df8908 10%,
+        #ff1d15 100%
+    );
+    background-clip: img;
+    color: transparent;
 }
 .social-icons a:hover {
     color: var(--text-color);
@@ -154,6 +169,7 @@ section {
 }
 .btn-group {
     display: flex;
+    padding-top: 1.5rem;
     gap: 1.5rem;
 }
 .btn {
@@ -314,6 +330,17 @@ section {
     resize: none;
 }
 
+/* para wala yung scroll sa phone number */
+.contact form .input-box input[type="number"]::-webkit-inner-spin-button,
+.contact form .input-box input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contact form .input-box input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .footer {
     background-color: var(--second-bg-color);
     padding: 50px 0;
@@ -339,3 +366,60 @@ section {
     margin-top: 40px;
     font-size: 16px;
 }
+
+@media(max-width:1285px) {
+    #menu-icon{
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3rem;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        color: var(--text-color);
+    }
+    .navbar.active {
+        display: block;
+    }
+    .gradient-btn {
+        display: none;
+    }
+    .home {
+        flex-direction: column-reverse;
+        margin: 5rem 0;
+        gap: 5rem;
+    }
+    .home-content {
+        align-items: center;
+        text-align: center;
+    }
+    /* .home-img img{
+        width: 56vw;
+    } */
+    .about{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about h2 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+    .about img {
+        width: 52vw;
+    }
+    .contact form {
+         flex-direction: column;
+    }
+}
+

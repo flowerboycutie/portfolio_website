@@ -277,7 +277,7 @@ section {
 }
 
 .projects {
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .projects-box {
@@ -364,8 +364,8 @@ section {
 }
 
 .certificates-card img {
-    height: 340px;
-    width: 440px;
+    height: 250px;
+    width: 350px;
     /* max-width: 300px;
     max-height: 450px; */
     border-radius: 2rem;

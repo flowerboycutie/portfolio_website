@@ -1,13 +1,13 @@
-import React, { useState } from 'react';  // Added for state management
+import React, { useState } from 'react'; 
 import './App.css';
 
 function App() {
-  const [isMenuActive, setIsMenuActive] = useState(false);  // State for menu visibility
-  const [iconSrc, setIconSrc] = useState('/menu-icon.png');  // State for icon src (toggle between menu and close)
+  const [isMenuActive, setIsMenuActive] = useState(false);  
+  const [iconSrc, setIconSrc] = useState('/menu-icon.png');  
 
   const toggleMenu = () => {
-    setIsMenuActive(!isMenuActive);  // Toggle menu active state
-    setIconSrc(isMenuActive ? '/menu-icon.png' : '/x.png');  // Toggle icon src (adjust '/close-icon.png' if your close image has a different name)
+    setIsMenuActive(!isMenuActive);  
+    setIconSrc(isMenuActive ? '/menu-icon.png' : '/x.png');  
   };
 
   return (
@@ -21,8 +21,8 @@ function App() {
           src={iconSrc} 
           alt="Menu Icon" 
           id="menu-icon" 
-          onClick={toggleMenu}  // Click handler to toggle menu and icon
-          style={{ cursor: 'pointer', width: '35px', height: '35px' }}  // Inline styles for sizing (adjust as needed)
+          onClick={toggleMenu}  
+          style={{ cursor: 'pointer', width: '35px', height: '35px' }}  
         />
 
         <nav className={`navbar ${isMenuActive ? 'active' : ''}`}>
@@ -140,22 +140,23 @@ function App() {
 
       <section className="contact" id="contact">
         <h2 className="heading">Contact <span>Me</span></h2>
-
-        <form action="#">
+        
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d7769c47-5a1d-4b59-ad6d-958607bf1631"></input>
           <div className="input-group">
             <div className="input-box">
-              <input type="text" placeholder="Full Name" />
-              <input type="email" placeholder="Email" />
+              <input type="text" name="name" placeholder="Full Name" required/>
+              <input type="email" name="email" placeholder="Email" required/>
             </div>
 
             <div className="input-box">
-              <input type="number" placeholder="Phone Number" />
-              <input type="text" placeholder="Subject" />
+              <input type="number" name="number" placeholder="Phone Number" />
+              <input type="text" name="subject" placeholder="Subject" required/>
             </div>
           </div>
 
           <div className="input-group2">
-            <textarea name="" id="" placeholder="Your Message" cols="30" rows="13"></textarea>
+            <textarea name="message" id="" placeholder="Your Message" cols="30" rows="13"></textarea>
             <input type="submit" value="Send Message" className="btn" />
           </div>
         </form>

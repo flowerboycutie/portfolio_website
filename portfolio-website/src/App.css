@@ -95,7 +95,7 @@ span {
     letter-spacing: 1px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
-    color: white;
+    color: white !important;
     border: none;
     text-wrap: nowrap;
 }
@@ -124,7 +124,7 @@ section {
 }
 
 .home-content h1 {
-    font-size: 8rem;
+    font-size: 7rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -153,6 +153,13 @@ section {
     box-shadow: 0 0 25px var(--main-color),
                 0 0 50px var(--main-color),
                 0 0 100px var(--main-color);
+}
+
+.social-and-contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Adjust as needed for full width */
 }
 
 .social-icons a {
@@ -251,6 +258,7 @@ section {
 
 .about-content p {
     font-size: 1.8rem;
+    text-align: justify;
 }
 
 .about-content .btn {
@@ -325,6 +333,54 @@ section {
 
 .project-card p {
     font-size: 1.6rem;
+}
+
+.certificates {
+    background-color: var(--second-bg-color);
+}
+
+.certificates-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-items: center;
+    gap: 3rem;
+    row-gap: 5rem;
+}
+
+.certificates-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 3rem;
+    gap: 2rem;
+    padding: 5rem 2rem;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 5px var(--main-color);
+    transition: 0.3s ease;
+}
+
+.certificates-card:hover {
+     box-shadow: 0 0 25px var(--main-color),
+                 0 0 50px var(--main-color);
+    transform: scale(1.02);
+}
+
+.certificates-card img {
+    height: 340px;
+    width: 440px;
+    /* max-width: 300px;
+    max-height: 450px; */
+    border-radius: 2rem;
+    object-fit: cover;
+}
+
+.certificates-card h3 {
+    font-size: 3rem;
 }
 
 .contact {

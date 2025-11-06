@@ -43,18 +43,17 @@ function App() {
           </h3>
           <p>I thrive at the intersection of logic and creativity. I'm excited to connect and explore how I can bring combined technical and analytical perspective to your team.</p>
 
-          <div className="social-icons">
-            <a href="https://github.com/flowerboycutie" target='_blank'>
-              <img src="/github-logo.png" alt="GitHub" />
-            </a>
+          <div className='social-and-contact'>
+            <div className="social-icons">
+              <a href="https://github.com/flowerboycutie" target='_blank'>
+                <img src="/github-logo.png" alt="GitHub" />
+              </a>
 
-            <a href="https://www.linkedin.com/in/mark-marvin-dizon-5176452a3/" target='_blank'>
-              <img src="/linkedinicon.png" alt="LinkedIn" />
-            </a>
-          </div>
-
-          <div className="btn-group">
-            <a href="#contact" className="btn">Contact</a>
+              <a href="https://www.linkedin.com/in/mark-marvin-dizon-5176452a3/" target='_blank'>
+                <img src="/linkedinicon.png" alt="LinkedIn" />
+              </a>
+            </div>
+              <a href="#contact" className="btn">Contact</a>
           </div>
         </div>
 
@@ -95,10 +94,10 @@ function App() {
 
         <div className="projects-box">
           <div className="project-card">
-            <img src="/project1.png" alt="Project 1" />
-            <h3>Ka Chowwww</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum bibendum lacus eu lobortis. Curabitur ac luctus tortor. Nullam cursus metus sit amet ante facilisis tincidunt. Nam hendrerit vel diam et consequat</p>
-            <div className="btn">View Project</div>
+            <img src="/portfolio-website.jpg" alt="Portfolio Website" />
+            <h3>Portfolio Website</h3>
+            <p>A modern, responsive portfolio website built with React, showcasing my projects, certificates, and professional journey as a Software Engineering student.</p>
+            <a href='https://github.com/flowerboycutie/portfolio_website' target='_blank' className="btn">View Project</a>
           </div>
           <div className="project-card">
             <img src="/project2.png" alt="Project 2" />

@@ -95,8 +95,8 @@ function App() {
         <div className="projects-box">
           <div className="project-card">
             <img src="/portfolio-website.jpg" alt="Portfolio Website" />
-            <h3>Portfolio Website</h3>
-            <p>A modern, responsive portfolio website built with React, showcasing my projects, certificates, and professional journey as a Software Engineering student.</p>
+            <h3>React | Portfolio Website</h3>
+            <p>A modern, responsive portfolio website built with React, showcasing my projects, certificates, and journey as a Software Engineering student.</p>
             <a href='https://github.com/flowerboycutie/portfolio_website' target='_blank' className="btn">View Project</a>
           </div>
           <div className="project-card">
@@ -155,7 +155,7 @@ function App() {
           </div>
 
           <div className="input-group2">
-            <textarea name="message" id="" placeholder="Your Message" cols="30" rows="13"></textarea>
+            <textarea name="message" id="" placeholder="Your Message" cols="30" rows="11"></textarea>
             <input type="submit" value="Send Message" className="btn" />
           </div>
         </form>

@@ -45,11 +45,11 @@ function App() {
 
           <div className='social-and-contact'>
             <div className="social-icons">
-              <a href="https://github.com/flowerboycutie" target='_blank'>
+              <a href="https://github.com/flowerboycutie" target='_blank' rel="noopener noreferrer">
                 <img src="/github-logo.png" alt="GitHub" />
               </a>
 
-              <a href="https://www.linkedin.com/in/mark-marvin-dizon-5176452a3/" target='_blank'>
+              <a href="https://www.linkedin.com/in/mark-marvin-dizon-5176452a3/" target='_blank' rel="noopener noreferrer">
                 <img src="/linkedinicon.png" alt="LinkedIn" />
               </a>
             </div>
@@ -97,7 +97,7 @@ function App() {
             <img src="/portfolio-website.jpg" alt="Portfolio Website" />
             <h3>React | Portfolio Website</h3>
             <p>A modern, responsive portfolio website built with React, showcasing my projects, certificates, and journey as a Software Engineering student.</p>
-            <a href='https://github.com/flowerboycutie/portfolio_website' target='_blank' className="btn">View Project</a>
+            <a href='https://github.com/flowerboycutie/portfolio_website' target='_blank' rel="noopener noreferrer" className="btn">View Project</a>
           </div>
           <div className="project-card">
             <img src="/project2.png" alt="Project 2" />
@@ -140,7 +140,7 @@ function App() {
       <section className="contact" id="contact">
         <h2 className="heading">Contact <span>Me</span></h2>
         
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form action="https://api.web3forms.com/submit" rel="noopener noreferrer" method="POST">
           <input type="hidden" name="access_key" value="d7769c47-5a1d-4b59-ad6d-958607bf1631"></input>
           <div className="input-group">
             <div className="input-box">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'; 
+import React, { useEffect, useState } from 'react'; 
 import './App.css';
 
 function App() {
@@ -9,6 +9,18 @@ function App() {
     setIsMenuActive(!isMenuActive);  
     setIconSrc(isMenuActive ? '/menu-icon.png' : '/x.png');  
   };
+
+  useEffect(() => {
+    document.title = 'Marvin Dizon - Portfolio';
+    const changeFavicon = (src) => {
+      const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+      link.type = 'image/icon';
+      link.rel = 'shortcut icon';
+      link.href = src;
+      document.getElementsByTagName('head')[0].appendChild(link);
+    };
+    changeFavicon('/icon.png')
+  }, []);
 
   return (
     <div>
@@ -100,22 +112,10 @@ function App() {
             <a href='https://github.com/flowerboycutie/portfolio_website' target='_blank' rel="noopener noreferrer" className="btn">View Project</a>
           </div>
           <div className="project-card">
-            <img src="/project2.png" alt="Project 2" />
-            <h3>bigay lahat ng yaman</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum bibendum lacus eu lobortis. Curabitur ac luctus tortor. Nullam cursus metus sit amet ante facilisis tincidunt. Nam hendrerit vel diam et consequat</p>
-            <div className="btn">View Project</div>
-          </div>
-          <div className="project-card">
-            <img src="/project3.png" alt="Project 3" />
-            <h3>BRAZILLLLL</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum bibendum lacus eu lobortis. Curabitur ac luctus tortor. Nullam cursus metus sit amet ante facilisis tincidunt. Nam hendrerit vel diam et consequat</p>
-            <div className="btn">View Project</div>
-          </div>
-          <div className="project-card">
-            <img src="/project4.png" alt="Project 4" />
-            <h3>baka renejay to</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean bibendum bibendum lacus eu lobortis. Curabitur ac luctus tortor. Nullam cursus metus sit amet ante facilisis tincidunt. Nam hendrerit vel diam et consequat</p>
-            <div className="btn">View Project</div>
+            <img src="/portfolio-website.jpg" alt="RPG Game" />
+            <h3>PyGame | Top-Down RPG</h3>
+            <p>GAme game game game game.</p>
+            <a href='https://github.com/flowerboycutie/rpg' target='_blank' rel="noopener noreferrer" className="btn">View Project</a>
           </div>
         </div>
       </section>

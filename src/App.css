@@ -506,6 +506,16 @@ section {
         width: 52vw;
     }
 
+    .projects h2 {
+        text-align: center;
+        margin: 2rem 0;
+    }    
+    
+    .certificates h2 {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
     .projects-box, .certificates-box {
         grid-template-columns: 1fr;  
         justify-items: center;  

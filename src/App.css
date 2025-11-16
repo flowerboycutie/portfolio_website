@@ -529,3 +529,12 @@ section {
         flex-direction: column;
     }
 }
+
+@media (max-width: 768px) {
+    .heading {
+        font-size: 4rem; 
+    }
+    .projects h2, .certificates h2 {
+        font-size: 4rem; 
+    }
+}

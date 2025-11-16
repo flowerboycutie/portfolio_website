@@ -112,9 +112,9 @@ function App() {
             <a href='https://github.com/flowerboycutie/portfolio_website' target='_blank' rel="noopener noreferrer" className="btn">View Project</a>
           </div>
           <div className="project-card">
-            <img src="/portfolio-website.jpg" alt="RPG Game" />
+            <img src="/rpg.jpg" alt="RPG Game" />
             <h3>PyGame | Top-Down RPG</h3>
-            <p>GAme game game game game.</p>
+            <p>A 2D top-down RPG built with PyGame, featuring player movement, combat with weapons and magic, dynamic UI for hp/mana/exp, and immersive sprite-based exploration in a tile-mapped world.</p>
             <a href='https://github.com/flowerboycutie/rpg' target='_blank' rel="noopener noreferrer" className="btn">View Project</a>
           </div>
         </div>

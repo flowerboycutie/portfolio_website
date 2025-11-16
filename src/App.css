@@ -275,14 +275,17 @@ section {
 
 .projects-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin: 0 auto;
-    place-items: center;
+    grid-template-columns: repeat(2, 400px);
+    /* margin: 0 auto; */
+    /* place-items: center; */
     gap: 3rem;
-    row-gap: 5rem;
+    /* row-gap: 5rem; */
+    justify-content: center;
 }
 
 .project-card {
+    width: 400px;  
+    box-sizing: border-box;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -306,8 +309,8 @@ section {
 }
 
 .project-card img {
-    height: 225px;
-    width: 400px;
+    height: auto;
+    width: 100%;
     /* max-width: 300px;
     max-height: 450px; */
     border-radius: 2rem;
@@ -328,14 +331,17 @@ section {
 
 .certificates-box {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin: 0 auto;
-    place-items: center;
+    grid-template-columns: repeat(2, 400px);
+    /* margin: 0 auto; */
+    /* place-items: center; */
     gap: 3rem;
-    row-gap: 5rem;
+    /* row-gap: 5rem; */
+    justify-content: center;
 }
 
 .certificates-card {
+    width: 400px;  
+    box-sizing: border-box;  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,8 +365,8 @@ section {
 }
 
 .certificates-card img {
-    height: 200px;
-    width: 300px;
+    height: auto;
+    width: 100%;
     border-radius: 2rem;
     object-fit: cover;
 }
@@ -498,6 +504,15 @@ section {
 
     .about img {
         width: 52vw;
+    }
+
+    .projects-box, .certificates-box {
+        grid-template-columns: 1fr;  
+        justify-items: center;  
+    }
+
+    .project-card, .certificates-card {
+        width: 100%; 
     }
 
     .contact form {

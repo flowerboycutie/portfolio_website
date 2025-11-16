@@ -273,6 +273,11 @@ section {
     background-color: var(--bg-color);
 }
 
+.projects h2 {
+    text-align: center;
+    margin: 5rem 0;
+}
+
 .projects-box {
     display: grid;
     grid-template-columns: repeat(2, 400px);
@@ -327,6 +332,11 @@ section {
 
 .certificates {
     background-color: var(--second-bg-color);
+}
+
+.certificates h2 {
+    text-align: center;
+    margin: 5rem 0;
 }
 
 .certificates-box {
@@ -530,11 +540,3 @@ section {
     }
 }
 
-@media (max-width: 768px) {
-    .heading {
-        font-size: 4rem; 
-    }
-    .projects h2, .certificates h2 {
-        font-size: 4rem; 
-    }
-}
